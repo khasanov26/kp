@@ -12,14 +12,16 @@ async function loadCars() {
     let carCard = document.createElement('div')
     carCard.innerHTML = `
       <div class="table__cell">${car.Name}</div>
-      <div class="table__cell">13</div>
-      <div class="table__cell">8</div>
-      <div class="table__cell">400</div>
-      <div class="table__cell">150</div>
-      <div class="table__cell">4464</div>
-      <div class="table__cell">12</div>
-      <div class="table__cell">1973-01-01</div>
-      <div class="table__cell">USA</div>
+      <div class="table__cell">${car.Acceleration}</div>
+      <div class="table__cell">${car.Cylinders
+}</div>
+      <div class="table__cell">${car.Displacement}</div>
+      <div class="table__cell">${car.Horsepower}</div>
+      <div class="table__cell">${car.Weight_in_lbs}</div>
+      <div class="table__cell">${car.Miles_per_Gallon}</div>
+      <div class="table__cell">${car.Year
+}</div>
+      <div class="table__cell">${car.Origin}</div>
     `
     carCard.className = 'table__row'
     
